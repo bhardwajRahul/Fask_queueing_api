@@ -53,7 +53,6 @@ Endpoints
 --------------------
 
  -   [http://127.0.0.1:5000/api/users?platform=<platform>]
-
      Returns the filtered on the basis of platform and response are cached as well
     
 
@@ -83,8 +82,9 @@ Endpoints
       ```
 
  -   [http://127.0.0.1:5000/api/upload]
-    
-    Returns the task_id generated on uploading of file to the task queue
+ 
+   Returns the task_id generated on uploading of file to the task queue 
+   
     - Method: `POST`
     - URL path: `/api/upload`
     - Request body:
@@ -94,12 +94,11 @@ Endpoints
         Sample File for Upload
     }
     ```
-
-  - Response:
+    - Response:
 
     Header: `HTTP 200`
     Body:
-      ```
+      ```  
       {
           {"data":{"task_id":"e8d310de-dc05-4612-a897-002d0b1c7fe6"},"status":"success"}
 
@@ -116,9 +115,10 @@ Endpoints
       ```
 
  -   [http://127.0.0.1:5000/api/upload/<task_id>]
-    
     Polling mechanism to check the status of Ingestion job
     Using unique ID of ingestion to get response for chosen ID
+    
+   
     - Method: `GET`
     - URL path: `/api/upload/e8d310de-dc05-4612-a897-002d0b1c7fe6`
     - Response:
