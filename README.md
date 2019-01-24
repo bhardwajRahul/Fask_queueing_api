@@ -24,8 +24,9 @@ How to Run the App?
 -   cd saavn_api
 -   virtualenv -p ‘which python3’ venv
 -   source venv/bin/activate
+-   Dump user.sql into Mysql (user.sql is a small section of CSV provided)
 -   pip install -r requirements.txt
--   python3 worker.py (Seperate instance)
+-   python3 worker.py (Separate instance)
 -   python3 run.py
 
 Everything should be ready. In your browser open
@@ -54,10 +55,12 @@ Endpoints
  -   [http://127.0.0.1:5000/api/users?platform=<platform>]
 
      Returns the filtered on the basis of platform and response are cached as well
+    
+
     - Method: `GET`
     - URL path: `/api/users?platform=android`
     - Response:
-
+    
     Header: `HTTP 200`
     Body:
       ```
@@ -157,8 +160,8 @@ Tech stack
     project. It comes built in with python.
 -   [RedisDB](https://redis.io/) - Key-Value based No-SQL DB to oprimize relational
     database by improving Read by caching data and queing data.
--    [Redis Queue](http://python-rq.org/) - RQ is a simple Python library for queueing jobs and processing them in the background with workers.
--   [Flask-Redis](https://github.com/underyx/flask-redis) - An flask extension of   [RedisPy](http://redis-py.readthedocs.io/en/latest/)
+-    [Redis Queue](http://python-rq.org/) - RQ is a simple Python library for queueing jobs and processing them in the background with   workers.
+-   [Flask-Redis](https://github.com/underyx/flask-redis) - An flask extension of [RedisPy](http://redis-py.readthedocs.io/en/latest/)
     to easliy used Redis with Python and Flask easily.
 
 Development Thought process
