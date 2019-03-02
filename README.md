@@ -1,4 +1,4 @@
-#Saavn Test Api
+#Test Api
 =============
 
 Online API system using flask, flask-restful, sqlalchemy,
@@ -6,7 +6,7 @@ Online API system using flask, flask-restful, sqlalchemy,
 The project has been developed using Flask- A python Micro-web framework
 and other additional packages describe below in Tech Stack Section.
 
-Github link for the project - <https://github.com/bhardwajRahul/saavn_api>
+
 
 Installation
 ------------
@@ -19,9 +19,6 @@ Before we begin, kindly install following on your system:-
 How to Run the App?
 -------------------
 
--   cd path/to/workspace
--   git clone <https://github.com/bhardwajRahul/saavn_api>
--   cd saavn_api
 -   virtualenv -p ‘which python3’ venv
 -   source venv/bin/activate
 -   Dump user.sql into Mysql (user.sql is a small section of CSV provided)
@@ -160,7 +157,7 @@ Tech stack
     project. It comes built in with python.
 -   [RedisDB](https://redis.io/) - Key-Value based No-SQL DB to oprimize relational
     database by improving Read by caching data and queing data.
--    [Redis Queue](http://python-rq.org/) - RQ is a simple Python library for queueing jobs and processing them in the background with   workers.
+-   [Redis Queue](http://python-rq.org/) - RQ is a simple Python library for queueing jobs and processing them in the background with       workers.
 -   [Flask-Redis](https://github.com/underyx/flask-redis) - An flask extension of [RedisPy](http://redis-py.readthedocs.io/en/latest/)
     to easliy used Redis with Python and Flask easily.
 
